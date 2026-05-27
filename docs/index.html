@@ -1,18 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Restaurant Review Dashboard</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:"Inter",sans-serif;background:#f5f5f7;color:#1d1d1f;padding:32px;max-width:1200px;margin:0 auto;text-align:center;padding-top:80px}
-h1{font-size:28px;font-weight:800;margin-bottom:8px}
-p{color:#6e6e73;font-size:14px}
-</style>
-</head>
-<body>
-<h1>Restaurant Review Dashboard</h1>
-<p>Waiting for first data sync... Run <code>python3 review_dashboard.py</code> to populate.</p>
-<p style="margin-top:24px;font-size:12px">Repo: <a href="https://github.com/abhinavmanocha/restaurant-review-dashboard">github.com/abhinavmanocha/restaurant-review-dashboard</a></p>
-</body>
-</html>
+body{font-family:"Inter",sans-serif;background:#f5f5f7;color:#1d1d1f;padding:32px;max-width:1200px;margin:0 auto}
+.dashboard-header{margin-bottom:32px}
+.dashboard-header h1{font-size:28px;font-weight:800;letter-spacing:-0.5px}
+.dashboard-header p{color:#6e6e73;font-size:14px}
+.last-updated{color:#6e6e73;font-size:12px;margin-top:4px}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-bottom:32px}
+.stat-card{background:white;border-radius:12px;padding:20px;box-shadow:0 1px 3px rgba(0,0,0,0.08)}
+.stat-card h3{font-size:15px;font-weight:700;margin-bottom:2px}
+.stat-address{font-size:12px;color:#6e6e73;margin-bottom:12px}
+.stat-row{display:flex;justify-content:space-between;padding:4px 0;font-size:14px}
+.stat-label{color:#6e6e73}
+.stat-value{font-weight:600}
+.section-title{font-size:20px;font-weight:700;margin:24px 0 16px;letter-spacing:-0.3px}
+.reviews-list{display:flex;flex-direction:column;gap:12px}
+.review-card{background:white;border-radius:12px;padding:20px;box-shadow:0 1px 3px rgba(0,0,0,0.08)}
+.review-header{display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap}
+.restaurant-badge{padding:2px 10px;border-radius:4px;color:white;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px}
+.review-date{font-size:12px;color:#6e6e73}
+.review-stars{font-size:14px;letter-spacing:1px}
+.review-body p{font-size:14px;line-height:1.6;color:#1d1d1f}
+.review-reply{margin-top:10px;padding:10px 14px;background:#f5f5f7;border-radius:8px;font-size:13px;color:#515154}
+@media(max-width:768px){body{padding:16px}}
+</style></head><body>
+<div class=dashboard-header><h1>Restaurant Review Dashboard</h1><p>All reviews across your locations</p><p class=last-updated>Last updated: May 27, 2026 at 04:06 AM UTC</p></div>
+<div class=stats-grid><div class=stat-card style="border-top:4px solid #e31837"><h3>St. Louis Bar & Grill</h3><p class=stat-address>Unit 8, 604 Santa Maria Blvd, Milton, ON</p><div class=stat-row><span class=stat-label>Avg Rating</span><span class=stat-value>3.9</span></div><div class=stat-row><span class=stat-label>Reviews (30d)</span><span class=stat-value>26</span></div></div><div class=stat-card style="border-top:4px solid #e8a317"><h3>Bar Burrito - Milton</h3><p class=stat-address>Unit 7, 604 Santa Maria Blvd, Milton, ON</p><div class=stat-row><span class=stat-label>Google Rating</span><span class=stat-value>4.7</span></div></div><div class=stat-card style="border-top:4px solid #e8a317"><h3>Bar Burrito - Brampton</h3><p class=stat-address>72 Quarry Edge Dr #1, Brampton, ON</p><div class=stat-row><span class=stat-label>Google Rating</span><span class=stat-value>4.6</span></div></div></div>
+<h2 class=section-title>Top 5 Most Recent Reviews</h2>
+<div class=reviews-list><div class=review-card style="border-left:4px solid #e31837"><div class=review-header><span class=restaurant-badge style="background:#e31837">SLF Milton</span><span class=review-date>2026/5/26</span><span class=review-stars style="color:#e31837">★★★★★</span></div><div class=review-body><p>Great service ! Thank you Alyssa for being so kind ! The lemon pepper wings are a must have !!!!! 🙌</p></div></div><div class=review-card style="border-left:4px solid #e31837"><div class=review-header><span class=restaurant-badge style="background:#e31837">SLF Milton</span><span class=review-date>2026/5/26</span><span class=review-stars style="color:#e31837">★★★★★</span></div><div class=review-body><p>Food was nice and Alyssa was a great server. Looking forward to coming back soon</p></div></div><div class=review-card style="border-left:4px solid #e31837"><div class=review-header><span class=restaurant-badge style="background:#e31837">SLF Milton</span><span class=review-date>2026/5/26</span><span class=review-stars style="color:#e31837">★★★★★</span></div><div class=review-body><p>Alisha was great good service</p></div></div><div class=review-card style="border-left:4px solid #e31837"><div class=review-header><span class=restaurant-badge style="background:#e31837">SLF Milton</span><span class=review-date>2026/5/22</span><span class=review-stars style="color:#e31837">★★☆☆☆</span></div><div class=review-body><p>I ordered the 8-piece boneless chicken along with the fiesta brisket beef bowl, and honestly both were pretty mediocre. The chicken lacked flavor and didn’t taste very fresh, while the brisket bowl was underwhelming and not what I expected based on the menu. Portion sizes were decent, but the overal...</p></div></div><div class=review-card style="border-left:4px solid #e31837"><div class=review-header><span class=restaurant-badge style="background:#e31837">SLF Milton</span><span class=review-date>2026/5/21</span><span class=review-stars style="color:#e31837">★★★★★</span></div><div class=review-body><p>Rubee’s a gem best bartender in my town</p></div></div></div>
+</body></html>
