@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+.env
+*_session.json
+*_session_state.json
+reviews_data.json

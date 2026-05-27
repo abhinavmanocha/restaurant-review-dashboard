@@ -1,0 +1,22 @@
+{
+  "_note": "Edit this file with your restaurant details",
+  "restaurants": [
+    {
+      "id": "example_slf",
+      "name": "St. Louis Bar & Grill",
+      "address": "Unit 8, 604 Santa Maria Blvd, Milton, ON",
+      "color": "#e31837",
+      "source": "renderseo",
+      "renderseo_email": "your-email@example.com",
+      "renderseo_password": "your-password"
+    },
+    {
+      "id": "example_bb",
+      "name": "Bar Burrito",
+      "address": "72 Quarry Edge Dr #1, Brampton, ON",
+      "color": "#e8a317",
+      "source": "google_maps",
+      "maps_url": "https://www.google.com/maps/place/..."
+    }
+  ]
+}
