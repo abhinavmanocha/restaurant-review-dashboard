@@ -1,22 +1,33 @@
 {
-  "_note": "Edit this file with your restaurant details",
   "restaurants": [
     {
-      "id": "example_slf",
+      "id": "slf",
       "name": "St. Louis Bar & Grill",
+      "short": "SLF Milton",
       "address": "Unit 8, 604 Santa Maria Blvd, Milton, ON",
       "color": "#e31837",
       "source": "renderseo",
-      "renderseo_email": "your-email@example.com",
-      "renderseo_password": "your-password"
+      "renderseo_email": "604santamaria@stlouiswings.com",
+      "renderseo_password": "jellied-chrome#102",
+      "maps_url": ""
     },
     {
-      "id": "example_bb",
-      "name": "Bar Burrito",
+      "id": "bb_milton",
+      "name": "Bar Burrito - Milton",
+      "short": "BB Milton",
+      "address": "Unit 7, 604 Santa Maria Blvd, Milton, ON",
+      "color": "#e8a317",
+      "source": "google_maps",
+      "maps_url": "https://www.google.com/maps/place/barBURRITO/@43.5021981,-79.865491,17z/data=!3m1!4b1!4m6!3m5!1s0x882b6f797cc0d2a9:0xa6be8a7bf1cad01b!8m2!3d43.5021981!4d-79.865491!16s%2Fg%2F11f8gn261w"
+    },
+    {
+      "id": "bb_brampton",
+      "name": "Bar Burrito - Brampton",
+      "short": "BB Brampton",
       "address": "72 Quarry Edge Dr #1, Brampton, ON",
       "color": "#e8a317",
       "source": "google_maps",
-      "maps_url": "https://www.google.com/maps/place/..."
+      "maps_url": "https://www.google.com/maps/place/barBURRITO/@43.7071568,-79.7839363,17z/data=!3m1!4b1!4m6!3m5!1s0x882b150978d4609b:0xf6951edcf76ee94d!8m2!3d43.7071568!4d-79.7839363!16s%2Fg%2F11fggv4tng"
     }
   ]
 }
