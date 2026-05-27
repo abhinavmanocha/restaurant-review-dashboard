@@ -7,7 +7,7 @@ import os, json, re, sys
 from datetime import datetime, timezone
 from playwright.sync_api import sync_playwright
 
-OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "output")
+OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "docs")
 CONFIG_FILE = os.path.join(os.path.dirname(__file__), "restaurants.json")
 OUTPUT_HTML = os.path.join(OUTPUT_DIR, "index.html")
 OUTPUT_JSON = os.path.join(OUTPUT_DIR, "reviews_data.json")

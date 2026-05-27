@@ -3,6 +3,7 @@ __pycache__/
 .DS_Store
 .venv/
 .env
+restaurants.json
 *_session.json
 *_session_state.json
-reviews_data.json
+output/
